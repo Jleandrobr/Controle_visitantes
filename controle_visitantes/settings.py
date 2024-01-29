@@ -81,11 +81,12 @@ WSGI_APPLICATION = 'controle_visitantes.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'controle_visitas',
-        'USER': 'postgres',
-        'PASSWORD': '1234',
-        'HOST': 'localhost'
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'controle_visitantes_db',
+        'USER': 'admin',
+        'PASSWORD': 'M5vN04MMeOYXx7tNV24uvDIbKVaO1NOW',
+        'HOST': 'dpg-cmrsg5uct0pc73epu5p0-a.oregon-postgres.render.com',
+        'PORT': '5432',
     }
 }
 
