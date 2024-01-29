@@ -16,7 +16,7 @@ SECRET_KEY = 'django-insecure-_p7^8bce!tat2@(f*%^abrnh$lp%vucq3#5*2up5p4_i961&66
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app', '*']
 
 sys.path.append(
     os.path.join(BASE_DIR, "apps")
@@ -81,8 +81,11 @@ WSGI_APPLICATION = 'controle_visitantes.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'controle_visitas',
+        'USER': 'postgres',
+        'PASSWORD': '1234',
+        'HOST': 'localhost'
     }
 }
 

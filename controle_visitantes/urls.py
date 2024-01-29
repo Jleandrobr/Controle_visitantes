@@ -28,7 +28,7 @@ urlpatterns = [
         name="logout"
     ),
 
-    path("",
+    path("securevista",
          index,
          name="index",
          ),
