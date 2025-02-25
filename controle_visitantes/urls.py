@@ -10,6 +10,9 @@ from visitantes.views import (
 )
 
 urlpatterns = [
+    path("",  auth_views.LoginView.as_view(
+            template_name="login.html"
+        ),),
     path("admin/", admin.site.urls),
 
     path(
