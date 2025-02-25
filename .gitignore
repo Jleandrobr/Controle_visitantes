@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env
+*.venv
+
+# Django stuff
+*.log
+db.sqlite3
+instance/
+media/
+staticfiles/
+
+# Django migrations
+*/migrations/*  
+!*/migrations/__init__.py  
+
+# Pytest and coverage
+.coverage
+.tox/
+.nox/
+htmlcov/
+*.cover
+.cache
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# JetBrains IDE
+.idea/
+
+# VS Code
+.vscode/
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+
+# Dependencies
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# OS-specific files
+.DS_Store
+Thumbs.db
